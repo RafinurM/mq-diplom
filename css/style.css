@@ -1,0 +1,475 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-style: regular;
+  }
+  @font-face {
+    font-family: "Open Sans-Bold";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-style: bold;
+  }
+  * {
+    /*сброс отступов */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  /* временный код / наложение макета
+  body::after {
+    content: "";
+    display: block;
+    width: 1660px;
+    height: 3207px;
+    background-image: url("https://raw.githubusercontent.com/netology-code/html-2-diploma/master/sources/NOEMI_Modern_ru.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: calc(50% - 830px);
+    opacity: 0.6;
+    z-index: 999;
+  }
+  */
+  /* стили шапки */
+  .header {
+    width: 100%;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    z-index: 0;
+    padding-top: 25px;
+    padding-bottom: 130px;
+  }
+  .header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+  }
+  .menu-item {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0 0 0 35px;
+  }
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+  .menu-item-link {
+    color: #ffffff;
+  }
+  
+  /*Блог о здоровье и прч */
+  .title {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Контент блога */
+  .content {
+    width: 1200px;
+    padding: 65px 15px;
+    margin-left: auto;  margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 782px;
+  }
+  .article {
+    display: flex;
+    align-items: flex-start;
+  }
+  /* добавлен по инструменту разраб */
+  h2 {
+    margin-top: 2px;
+  }
+  
+  .article:nth-child(n + 2) {
+    margin-top: 57px;
+  }
+  
+  .article-preview-image {
+    max-width: 380px;
+    min-width: 380px;
+    background-color: #b59f5b;
+  }
+  .article-info {
+    margin-left: 30px;
+  }
+  .article-tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  
+  .article-tag {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    line-height: 1.2;
+  }
+  .article-tag-link {
+    color: #b59f5b;
+  }
+  .article-tag:hover {
+    text-decoration: underline;
+  }
+  .article-heading {
+    font-size: 20px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    text-transform: uppercase;
+  }
+  .article-heading:hover {
+    color: #b59f5b;
+  }
+  .article-hint {
+    display: flex;
+    margin: 25px 0 45px 0;
+  }
+  .article-time {
+    font-size: 12px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-right: 10px;
+  }
+  .article-autor {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+  }
+  .article-content {
+    width: 367px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+  
+  /* Правая колонка */
+  .right-bar {
+    width: 272px;
+  }
+  
+  
+  .new-post-search,
+  .new-posts,
+  .mailings,
+  .tags,
+  .themes {
+    margin-bottom: 60px;
+  }
+  .new-posts-title,
+  .mailings-title,
+  .tags-title,
+  .themes-title {
+    font-size: 14px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+  .new-posts-title::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin: 5px auto 25px;
+  }
+  
+  .new-post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 22px;
+  }
+  .new-post-image {
+    max-width: 70px;
+    min-width: 70px;
+    background-color: #f4f7f6;
+  }
+  .new-post-info {
+    margin-left: 20px;
+  }
+  .new-post-time {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    opacity: 0.54;
+  }
+  .new-post-title {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    text-transform: uppercase;
+  }
+  
+  .new-post-title-link:hover {
+    color: #b59f5b;
+  }
+  
+  .new-post-title-link {
+    color: #000000;
+  }
+  /* Поиск */
+  .new-post-search {
+    vertical-align: top;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .search-field {
+    box-sizing: border-box;
+    width: 220px;
+    height: 48px;
+    background-color: #f4f7f6;
+    outline: none;
+    border: none;
+    padding: 17px;
+    vertical-align: middle;
+  }
+  .search-field:focus {
+    border-bottom: 1px solid #b59f5b;
+  }
+  .search-field-hint,
+  .search-button-hint,
+  .mailings-hint {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  .search-button {
+    width: 48px;
+    height: 48px;
+    background-color: #b59f5b;
+    border: none;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    vertical-align: middle;
+  }
+  .search-button:hover {
+    background-color: #323232;
+  }
+  
+  /* рассылка */
+  .mailings-title::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin: 10px auto 25px;
+  }
+  
+  .mail-field {
+    width: 100%;
+    height: 48px;
+    background-color: #f4f7f6;
+    border: none;
+    outline: none;
+    padding: 17px;
+    vertical-align: middle;
+    margin-bottom: 17px;
+  }
+  .mail-field:focus {
+    border: 1px solid #b59f5b;
+  }
+  .subscribe {
+    width: 270px;
+    height: 48px;
+    border: none;
+    background-color: #b59f5b;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .subscribe:hover {
+    background-color: #323232;
+  }
+  /* Теги */
+  .tags-title::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin: 5px auto 20px;
+  }
+  
+  .tags-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tags-list-item {
+    font-size: 12px;
+    color: #0f0d0e;
+    line-height: 3;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    text-transform: uppercase;
+    border: 3px solid #eeeeee;
+    background-color: rgba(244, 243, 241, 0);
+    margin: 6px;
+    padding: 0 10px;
+  }
+  .tags-list-item:hover {
+    border: 3px solid #b59f5b;
+  }
+  /* Темы */
+  .themes-title::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin: 5px auto 10px;
+  }
+  .themes-list {
+    list-style-type: none;
+  }
+  .themes-list-item {
+    font-size: 14px;
+    line-height: 3.3;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+  }
+  .themes-list-item:hover {
+    color: #b59f5b;
+  }
+  .themes-list-item::after {
+    content: "";
+    display: block;
+    width: 271px;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+  /* количество тем */
+  .sup {
+    font-size: 12px;
+    line-height: 3;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+    vertical-align: top;
+  }
+  
+  /* Подвал */
+  .footer {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socials {
+    background-color: #f4f7f6;
+    padding: 27px 0;
+    display: block;
+    margin-bottom: 70px;
+  }
+  .socials-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socials-item {
+    display: inline-block;
+  }
+  .socials-link {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    margin: 0 14px;
+    display: inline-block;
+  }
+  /* Иконки соц сетей*/
+  .socials-link-twitter {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+  }
+  
+  .socials-link-pinterest {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+  }
+  .socials-link-facebook {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+  }
+  .socials-link-instagram {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+  }
+  .socials-link-tumblr {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  }
+  
+  .socials-text {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+  }
+  /* Копирайт */
+  .copyright {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .copyright-text {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 700;
+    font-family: "Open Sans-Bold";
+  }
+  
