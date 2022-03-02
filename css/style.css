@@ -140,7 +140,9 @@
   position: relative;
   z-index: 0;
 }
-
+.trend-block:nth-child(1n + 2) {
+  margin-left: 5px;
+}
 .trend-block:after {
   content: "";
   position: absolute;
@@ -157,7 +159,7 @@
   display: flex;
   flex-direction: column;
   border: 3px solid #b59f5b;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   padding: 30px;
   margin: 20px;
 }
@@ -517,12 +519,135 @@ h2 {
   vertical-align: top;
 }
 
+/* Наши изделия */
+.products {
+  max-width: 1200px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.products-title {
+  font-size: 20px;
+  line-height: 1.45;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-title:after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  margin: 10px auto 25px;
+}
+
+.products-blocks {
+  display: flex;
+  
+}
+
+.product-block {
+  width: 350px;
+  min-height: 204px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.product-image {
+  width: 300px;
+  height: 204px;
+  background-color: #eff6f1;
+}
+
+.product-card {
+  outline: 3px solid #b59f5b;
+  padding: 25px;
+  margin: -30px 0 0 0;
+}
+
+.product-title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
+
+.product-description {
+  width: 301px;
+  height: 63px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f0d0e;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-old-price {
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: line-through;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.product-actual-price {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.to-shop {
+  width: 140px;
+  height: 48px;
+  display: block;
+  background-color: #b59f5b;
+  border: none;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.to-shop:hover {
+  background-color: #323232;
+  
+}
+
+/* Курсоры */
+.to-shop:hover, .subscribe:hover, .search-button:hover {
+  cursor: pointer;
+}
+
 /* Подвал */
 .footer {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .socials {
   background-color: #f4f7f6;
@@ -573,6 +698,7 @@ h2 {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
+
 /* Копирайт */
 .copyright {
   text-align: center;
@@ -584,3 +710,4 @@ h2 {
   font-weight: 700;
   font-family: "Open Sans-Bold";
 }
+/* Конец блока копирайт */
