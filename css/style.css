@@ -164,6 +164,7 @@
   padding: 3.5em 3em;
   margin: 2em;
   outline: 3px solid #b59f5b;
+  width: 100%;
 }
 
 .trend-block-tags {
@@ -375,7 +376,7 @@ h2 {
 
 .search-field {
   box-sizing: border-box;
-  width: 220px;
+  width: 218px;
   height: 48px;
   background-color: #f4f7f6;
   outline: none;
@@ -558,12 +559,32 @@ h2 {
   height: 204px;
   background-color: #eff6f1;
 }
+.shop-item-1 {
+  background-image: url(../images/shop-item-desk1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.shop-item-3 {
+  background-image: url(../images/shop-item-desk3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shop-item-2 {
+  background-image: url(../images/shop-item-desk2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .product-card {
   outline: 3px solid #b59f5b;
   outline-offset: 20px;
-  padding: 25px;
-  margin: -30px 0 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-title {
@@ -573,11 +594,11 @@ h2 {
   font-weight: 700;
   font-family: "Open Sans";
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .product-description {
   width: 301px;
-  height: 63px;
   font-size: 15px;
   line-height: 1.5;
   color: #0f0d0e;
@@ -589,6 +610,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-top: 15px;
 }
 
 .product-prices {
@@ -929,6 +951,18 @@ h2 {
   .product-block {
     margin-bottom: 60px;
   }
+
+  .shop-item-1 {
+    background-image: url(../images/shop-item-tablet1.jpg);
+  }
+
+  .shop-item-2 {
+    background-image: url(../images/shop-item-tablet2.jpg);
+  }
+
+  .shop-item-3 {
+    background-image: url(../images/shop-item-tablet3.jpg);
+  }
 }
 
 /* Мобильная версия */
@@ -946,6 +980,10 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 215px;
+  }
+
+  .logo-img {
+    width: 275px;
   }
   .container {
     max-width: 640px;
@@ -987,12 +1025,17 @@ h2 {
   }
 
   .content {
-    padding: 65px 35px;
+    padding: 65px 15px;
     flex-wrap: wrap;
+    max-width: 360px;
+    margin-left: 0;
   }
   .main {
     min-width: 395px;
     margin-right: auto;
+  }
+  .right-bar {
+    margin: 65px 0;
   }
 
   .article {
@@ -1020,5 +1063,15 @@ h2 {
 
   .product-block:nth-child(1n + 2) {
     margin-top: 60px;
+  }
+
+  .shop-item-1 {
+    background-image: url(../images/shop-item-mobile1.jpg);
+  }
+  .shop-item-2 {
+    background-image: url(../images/shop-item-mobile2.jpg);
+  }
+  .shop-item-3 {
+    background-image: url(../images/shop-item-mobile3.jpg);
   }
 }
