@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /* временный код / наложение макета
   body::after {
     content: "";
@@ -72,7 +76,7 @@
 }
 .menu-item {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   font-family: "Open Sans";
   text-align: center;
@@ -87,7 +91,7 @@
 
 /*Блог о здоровье и прч */
 .title {
-  font-size: 45px;
+  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Open Sans-Bold";
@@ -104,11 +108,11 @@
 /*Сейчас в тренде*/
 .trends {
   margin-top: 62px;
-  font-size: 10px;
+  font-size: 1rem;
 }
 .trends-title {
   width: 100%;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.45;
   color: #0f0d0e;
   font-weight: 700;
@@ -143,7 +147,7 @@
   z-index: 0;
 }
 .trend-block:nth-child(1n + 2) {
-  margin-left: 0.5em;
+  margin-left: 5px;
 }
 .trend-block:after {
   content: "";
@@ -161,8 +165,8 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0);
-  padding: 3.5em 3em;
-  margin: 2em;
+  padding: 35px 30px;
+  margin: 20px;
   outline: 3px solid #b59f5b;
   width: 100%;
 }
@@ -175,7 +179,7 @@
 }
 
 .trend-block-tag {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 2.8;
   color: #b59f5b;
   font-weight: 700;
@@ -186,7 +190,7 @@
   text-decoration: underline;
 }
 .trend-block-title {
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.2;
   color: #ffffff;
   font-weight: 700;
@@ -253,7 +257,7 @@ h2 {
 
 .article-tag {
   margin-right: 20px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: "Open Sans-Bold";
   line-height: 1.2;
@@ -265,7 +269,7 @@ h2 {
   text-decoration: underline;
 }
 .article-heading {
-  font-size: 20px;
+  font-size: 2rem;
   color: #0f0d0e;
   font-weight: 700;
   font-family: "Open Sans-Bold";
@@ -279,21 +283,21 @@ h2 {
   margin: 25px 0 45px 0;
 }
 .article-time {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #888888;
   font-weight: 400;
   font-family: "Open Sans";
   margin-right: 10px;
 }
 .article-autor {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #000000;
   font-weight: 700;
   font-family: "Open Sans-Bold";
 }
 .article-content {
   width: 367px;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: #0f0d0e;
   font-weight: 400;
@@ -316,7 +320,7 @@ h2 {
 .mailings-title,
 .tags-title,
 .themes-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #0f0d0e;
   font-weight: 700;
   font-family: "Open Sans-Bold";
@@ -346,14 +350,14 @@ h2 {
   margin-left: 20px;
 }
 .new-post-time {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #000000;
   font-weight: 400;
   font-family: "Open Sans";
   opacity: 0.54;
 }
 .new-post-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.2;
   font-weight: 700;
   font-family: "Open Sans-Bold";
@@ -438,7 +442,7 @@ h2 {
   height: 48px;
   border: none;
   background-color: #b59f5b;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -462,7 +466,7 @@ h2 {
   flex-wrap: wrap;
 }
 .tags-list-item {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #0f0d0e;
   line-height: 3;
   font-weight: 700;
@@ -489,7 +493,7 @@ h2 {
   list-style-type: none;
 }
 .themes-list-item {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 3.3;
   color: #000000;
   font-weight: 700;
@@ -507,7 +511,7 @@ h2 {
 }
 /* количество тем */
 .sup {
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 3;
   color: #b59f5b;
   font-weight: 700;
@@ -525,7 +529,7 @@ h2 {
 }
 
 .products-title {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.45;
   color: #0f0d0e;
   font-weight: 700;
@@ -585,10 +589,11 @@ h2 {
   margin: 0;
   display: flex;
   flex-direction: column;
+  
 }
 
 .product-title {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.2;
   color: #0f0d0e;
   font-weight: 700;
@@ -599,7 +604,7 @@ h2 {
 
 .product-description {
   width: 301px;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #0f0d0e;
   font-weight: 400;
@@ -619,7 +624,7 @@ h2 {
 }
 
 .product-old-price {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.7;
   text-decoration: line-through;
   color: #0f0d0e;
@@ -628,7 +633,7 @@ h2 {
 }
 
 .product-actual-price {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.2;
   color: #0f0d0e;
   font-weight: 700;
@@ -643,7 +648,7 @@ h2 {
   border: none;
   font-weight: 700;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -722,7 +727,7 @@ h2 {
   margin-bottom: 60px;
 }
 .copyright-text {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #999999;
   font-weight: 700;
   font-family: "Open Sans-Bold";
@@ -747,7 +752,7 @@ h2 {
 }
 
 .popup-title {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.45;
   color: #0f0d0e;
   font-weight: 700;
@@ -765,14 +770,14 @@ h2 {
 }
 
 .popup-span {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 3;
   color: #000000;
   font-weight: 400;
   font-family: "Open Sans";
 }
 .popup-select {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #000000;
   font-weight: 400;
   font-family: "Open Sans";
@@ -804,7 +809,7 @@ h2 {
 .email-check-question-text,
 .feedback-form-question,
 .feedback-text {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #000000;
   font-weight: 400;
   font-family: "Open Sans";
@@ -819,7 +824,7 @@ h2 {
 .popup-close {
   width: 25px;
   height: 25px;
-  font-size: 20px;
+  font-size: 2rem;
   position: absolute;
   top: -5px;
   right: 0;
@@ -881,13 +886,16 @@ h2 {
   height: 48px;
   border: none;
   background-color: #b59f5b;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 /* Для планшетов */
 @media (min-width: 641px) and (max-width: 1200px) {
+  html {
+    font-size: 56%;
+  }
   .container {
     max-width: 770px;
   }
@@ -896,10 +904,7 @@ h2 {
     background-image: url(../images/banner-bg-tablet.jpg);
   }
 
-  .title {
-    font-size: 40px;
-  }
-
+  
   .menu-list {
     display: none;
   }
@@ -967,12 +972,15 @@ h2 {
 
 /* Мобильная версия */
 @media (max-width: 640px) {
+
+  html {
+    font-size: 37.5%;
+  }
   .header {
     background-image: url(../images/banner-mobile.jpg);
   }
 
   .title {
-    font-size: 26px;
     margin-top: 30px;
   }
 
