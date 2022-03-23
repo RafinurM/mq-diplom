@@ -568,8 +568,8 @@ h2 {
 }
 
 .product-image {
-  width: 300px;
-  max-height: 204px;
+  min-width: 300px;
+  min-height: 200px;
   background-color: #eff6f1;
 }
 
@@ -993,6 +993,7 @@ h2 {
     margin-bottom: 15px;
   }
 
+  
 }
 
 /* Мобильная версия */
