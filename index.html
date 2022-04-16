@@ -21,7 +21,7 @@
       </div>
       <nav class="menu">
         <button class="menu-button">
-          <span class="menu-button-span">Открыть меню</span>
+          <span class="menu-button-span"></span>
         </button>
         <ul class="menu-list">
           <li class="menu-item"><a href="#0" class="menu-item-link">Главная</a></li>
@@ -101,9 +101,7 @@
           <div class="article-content">
             <p>Итак, вы в Питере. раннее утро. лед с рек и каналов уже ушёл, запущены фонтаны города...Музеи ещё
               закрыты. Что посмотреть?</p>
-            <br>
-            <p>Автор: Игорь Вадимов</p>
-            <p>Источник: &#169Shkolazhizni.ru</p>
+
           </div>
         </div>
       </article>
@@ -316,8 +314,8 @@
               class="product-description-text-link">здесь</a>.</span>
           <div class="product-footer">
             <div class="product-prices">
-              <span class="product-old-price">1000</span>
-              <span class="product-actual-price">800</span>
+              <span class="product-old-price">1000 &#8381</span>
+              <span class="product-actual-price">800 &#8381</span>
             </div>
             <button class="to-shop">В магазин</button>
           </div>
@@ -328,7 +326,7 @@
         <picture class="product-image">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
           <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
-          <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик"  class="shop-item-image">
+          <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик" class="shop-item-image">
         </picture>
         <div class="product-card">
           <h3 class="product-title">Кукла "Зайчик"</h3>
@@ -338,7 +336,7 @@
           <div class="product-footer">
             <div class="product-prices">
               <span class="product-old-price"> </span>
-              <span class="product-actual-price">3500</span>
+              <span class="product-actual-price">3500 &#8381</span>
             </div>
             <button class="to-shop">В магазин</button>
           </div>
@@ -349,7 +347,7 @@
         <picture class="product-image">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
           <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
-          <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка"  class="shop-item-image">
+          <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка" class="shop-item-image">
         </picture>
         <div class="product-card">
           <h3 class="product-title">Шестиугольная рамка</h3>
@@ -358,8 +356,8 @@
               из подручных средств за 30 минут"</a>.</span>
           <div class="product-footer">
             <div class="product-prices">
-              <span class="product-old-price">500</span>
-              <span class="product-actual-price">400</span>
+              <span class="product-old-price">500 &#8381</span>
+              <span class="product-actual-price">400 &#8381</span>
             </div>
             <button class="to-shop">В магазин</button>
           </div>
@@ -388,11 +386,11 @@
         </li>
         <li class="socials-item">
           <a href="#0" class="socials-link socials-link-instagram">
-            <span class="socials-text">Профиль блога в Пинтересте</span></a>
+            <span class="socials-text">Профиль блога в Инстаграмме</span></a>
         </li>
         <li class="socials-item">
           <a href="#0" class="socials-link socials-link-tumblr">
-            <span class="socials-text">Профиль блога в Фейсбуке</span></a>
+            <span class="socials-text">Профиль блога в Тумблере</span></a>
         </li>
       </ul>
     </div>
@@ -404,42 +402,42 @@
 
   <!--Popup window-->
   <div class="popup">
-  <form class="popup-container">
-    <h2 class="popup-title">Ваш фидбек</h2>
-    <div class="popup-activity-check">
-      <label class="popup-activity-label">
-        <span class="popup-span">Как часто вы заходите на сайт?</span>
-        <select class="popup-select">
-          <option value="daily" selected>Почти каждый день</option>
-          <option value="everyday">Раз в несколько дней</option>
-          <option value="everyweek">Раз в несколько недель</option>
-          <option value="everyyear">Несколько раз в год </option>
-        </select>
+    <form class="popup-container">
+      <h2 class="popup-title">Ваш фидбек</h2>
+      <div class="popup-activity-check">
+        <label class="popup-activity-label">
+          <span class="popup-span">Как часто вы заходите на сайт?</span>
+          <select class="popup-select">
+            <option value="daily" selected>Почти каждый день</option>
+            <option value="everyday">Раз в несколько дней</option>
+            <option value="everyweek">Раз в несколько недель</option>
+            <option value="everyyear">Несколько раз в год </option>
+          </select>
+        </label>
+      </div>
+
+      <span class="email-check-question">Вы подписаны на e-mail рассылку?</span>
+      <div class="radio-group-container">
+        <label class="radio-group">
+          <input type="radio" class="email-check-answer" name="email-check-question-choose">
+          <span class="email-check-question-text">Да</span>
+        </label>
+        <label class="radio-group">
+          <input type="radio" class="email-check-answer" name="email-check-question-choose">
+          <span class="email-check-question-text">Нет</span>
+        </label>
+
+      </div>
+
+
+      <label class="feedback-form">
+        <span class="feedback-form-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <textarea class="feedback-text" placeholder="Может, больше рецептов?" required></textarea>
       </label>
-    </div>
-
-    <span class="email-check-question">Вы подписаны на e-mail рассылку?</span>
-    <div class="radio-group-container">
-      <label class="radio-group">
-        <input type="radio" class="email-check-answer" name="email-check-question-choose">
-        <span class="email-check-question-text">Да</span>
-      </label>
-      <label class="radio-group">
-        <input type="radio" class="email-check-answer" name="email-check-question-choose">
-        <span class="email-check-question-text">Нет</span>
-      </label>
-
-    </div>
-
-
-    <label class="feedback-form">
-      <span class="feedback-form-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-      <textarea class="feedback-text" placeholder="Может, больше рецептов?" required></textarea>
-    </label>
-    <button type="submit" class="popup-submit-button">Отправить</button>
-    <button class="popup-close" type="button"></button>
-  </form>
-</div>
+      <button type="submit" class="popup-submit-button">Отправить</button>
+      <button class="popup-close" type="button"></button>
+    </form>
+  </div>
 
 
 </body>
